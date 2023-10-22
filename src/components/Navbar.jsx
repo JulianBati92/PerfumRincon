@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="d-flex align-items-center">
           <Link to="/" className="navbar-brand">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/prayformojo-4a625.appspot.com/o/navbarlogo.png?alt=media&token=70a182f4-0f56-4b8b-87e6-8570e6c7a5e7"
+              src="https://firebasestorage.googleapis.com/v0/b/perfumrincon-3dae2.appspot.com/o/navbarlogo.jpg?alt=media&token=336b646c-cb40-4121-9fec-aa3f1a1c7945"
               alt="PerfumRincon"
               style={{ width: '70px', height: '70px' }}
             />

@@ -14,11 +14,12 @@ import { CartContextProvider } from './components/CartContext';
 
 const App = () => {
   const backgroundStyle = {
-    backgroundImage: `url('')`,
+    backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/perfumrincon-3dae2.appspot.com/o/fondoperfumrincon.jpg?alt=media&token=63d00890-fb53-4f87-a23b-27b6581a4442')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 0.7)',
     minHeight: '100vh',
-    opacity: 0.9,
+    opacity: 0.5,
   };
 
   return (
@@ -26,7 +27,7 @@ const App = () => {
       <div className="d-flex flex-column min-vh-100">
         <Navbar />
         <div className="flex-grow-1" style={backgroundStyle}>
-          <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)', padding: '20px' }}>
+          <div>
             <Routes>
               <Route
                 path="/"

@@ -12,13 +12,13 @@ const CategoryItemList = () => {
     setLoading(true);
 
     const firebaseConfig = {
-      apiKey: "AIzaSyDKzSGCrzgKDRrF7WzMy2Jfc6aeHFYWIX0",
-      authDomain: "prayformojo-4a625.firebaseapp.com",
-      projectId: "prayformojo-4a625",
-      storageBucket: "prayformojo-4a625.appspot.com",
-      messagingSenderId: "591740997621",
-      appId: "1:591740997621:web:acdf0a76d021fadc6adabc",
-      measurementId: "G-6STXJP9QFE"
+      apiKey: "AIzaSyCjePcPfMzz0lGnKisrQJTuzo0SEx4obXU",
+      authDomain: "perfumrincon-3dae2.firebaseapp.com",
+      projectId: "perfumrincon-3dae2",
+      storageBucket: "perfumrincon-3dae2.appspot.com",
+      messagingSenderId: "649763374063",
+      appId: "1:649763374063:web:c3f0b2a6bec674180d6c1a",
+      measurementId: "G-LHG0LNRMGN"
     };
 
     const db = getFirestore();
