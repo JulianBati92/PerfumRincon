@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { db } from '../main'; 
 import { collection, addDoc, query, getDocs, where, updateDoc } from 'firebase/firestore';
 
@@ -38,8 +38,8 @@ const OrderForm = () => {
         const productTitle = item.title; // Título del producto en el carrito
 
         // Busca el producto en la colección de productos por su título
-        const query = query(productsCollection, where("title", "==", productTitle));
-        const querySnapshot = await getDocs(query);
+        const queryRef = query(productsCollection, where("title", "==", productTitle));
+        const querySnapshot = await getDocs(queryRef);
 
         if (!querySnapshot.empty) {
           // Debería haber solo un producto con el título dado

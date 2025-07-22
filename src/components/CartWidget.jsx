@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import { BiCart } from 'react-icons/bi';
 
 function CartWidget({ numeroDeItemsEnCarrito }) {
@@ -9,5 +9,9 @@ function CartWidget({ numeroDeItemsEnCarrito }) {
     </a>
   );
 }
+
+CartWidget.propTypes = {
+  numeroDeItemsEnCarrito: PropTypes.number.isRequired,
+};
 
 export default CartWidget;

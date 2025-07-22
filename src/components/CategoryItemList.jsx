@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getFirestore, collection, query, where, getDocs } from 'firebase/firestore';
 
@@ -10,16 +10,6 @@ const CategoryItemList = () => {
 
   useEffect(() => {
     setLoading(true);
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyCjePcPfMzz0lGnKisrQJTuzo0SEx4obXU",
-      authDomain: "perfumrincon-3dae2.firebaseapp.com",
-      projectId: "perfumrincon-3dae2",
-      storageBucket: "perfumrincon-3dae2.appspot.com",
-      messagingSenderId: "649763374063",
-      appId: "1:649763374063:web:c3f0b2a6bec674180d6c1a",
-      measurementId: "G-LHG0LNRMGN"
-    };
 
     const db = getFirestore();
 
