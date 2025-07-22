@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from './CartContext';
 
@@ -9,10 +9,6 @@ const Checkout = () => {
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
   };
 
-  const handlePlaceOrder = () => {
-    const totalPrice = calculateTotalPrice();
-    alert(`Gracias por tu compra. Total a pagar: $${totalPrice}. Pronto nos comunicaremos contigo vía email.`);
-  };
 
   const handleEmptyCart = () => {
     cartItems.forEach(item => {

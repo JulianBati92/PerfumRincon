@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const Counter = ({ onAdd, text = "Agregar al carrito", q = 1, itemId }) => {
   const [count, setCount] = useState(q);
@@ -43,4 +44,11 @@ const Counter = ({ onAdd, text = "Agregar al carrito", q = 1, itemId }) => {
 };
 
 export default Counter;
+
+Counter.propTypes = {
+  onAdd: PropTypes.func.isRequired,
+  text: PropTypes.string,
+  q: PropTypes.number,
+  itemId: PropTypes.string,
+};
 
